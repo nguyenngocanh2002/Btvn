@@ -1,84 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<h1>đăng ký tài khoản</h1>
 
-    <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-
-        header {
-          background: #cccccc;
-          color: white;
-          padding: 20px;
-          height: 200px;
-        }
-
-        .container-row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            background-color: antiquewhite;
-            height: 300px;
-        }
-
-        .container-row > .sidebar-left {
-          flex: 0 1 25%;
-          background-color: greenyellow;
-          color: white;
-          min-height: 200px;
-        }
-
-        .container-row > .sidebar-right {
-          flex: 0 1 25%;
-          background-color: olive;
-          color: white;
-          min-height: 200px;
-        }
-
-        .container-row > main {
-          flex: 0 1 50%;
-          background-color: burlywood;
-          color: white;
-          min-height: 200px;
-        }
-
-        footer {
-          background: #cccccc;
-          color: white;
-          padding: 20px;
-          height: 200px;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="site-wrap">
-      <header>
-        <span>Logo</span>
-        <h1>Phần đầu của 1 trang web</h1>
-      </header>
-
-      <div class="container">
-        <div class="container-row">
-            <div class="sidebar sidebar-left">Cột tay trái</div>
-            <main>
-                <article>
-                    Nội dung của bài viết
-                </article>
-            </main>
-            <div class="sidebar sidebar-right">Cột tay phải</div>
-        </div>
-      </div>
-
-      <footer>
-        <p>© Toàn bộ bản quyền thuộc Tri thức trực tuyến</p>
-      </footer>
+<div class="container">
+  <form>
+    <div class="form-row">
+      <label for="full-name">Họ tên:</label>
+      <input type="text" id="full-name" name="full-name" required>
     </div>
-  </body>
-</html>
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-row">
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-row">
+      <label for="birthday">Sinh nhật:</label>
+      <input type="date" id="birthday" name="birthday" required>
+    </div>
+    <div class="form-row">
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <div class="form-row">
+      <label for="message">Ghi chú:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <div class="form-row">
+      <button type="submit">Đăng ký</button>
+    </div>
+  </form>
+</div>
